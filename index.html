@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE FUTURE VISION 911</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:radial-gradient(circle at top,#29200c,#050505 65%);
+ color:#f5d77b;
+ font-family:Arial,sans-serif;
+ text-align:center;
+}
+.container{max-width:900px;margin:auto;padding:30px 18px}
+h1{font-size:clamp(30px,7vw,55px);letter-spacing:3px;text-shadow:0 0 15px #d6a832}
+.gold{color:#ffd700}
+.welcome{font-style:italic;font-size:24px;color:#fff}
+h2{color:#ffd700;margin-top:35px}
+.panel{
+ background:#111;border:1px solid #a98224;
+ border-radius:14px;padding:22px;margin:20px auto;
+ box-shadow:0 0 18px #6c501d;
+}
+.names{line-height:2.2;font-weight:bold;letter-spacing:1px}
+.rules{text-align:left;line-height:1.8;color:#eee}
+input{
+ padding:13px;border-radius:7px;border:1px solid #d5ad38;
+ background:#080808;color:white;width:220px;max-width:100%;
+}
+button{
+ padding:13px 24px;border:0;border-radius:7px;
+ background:#d5ad38;color:#080808;font-weight:bold;
+ cursor:pointer;margin:8px;
+}
+button:hover{background:#ffe18a}
+#secret{display:none}
+.fake{color:#ff3030;font-weight:bold}
+iframe{width:100%;max-width:560px;height:315px;border:0;border-radius:10px}
+footer{padding:30px;color:#b99b50}
+</style>
+</head>
+<body>
+<div class="container" id="main">
+
+<h1>THE FUTURE VISION <span class="gold">911</span></h1>
+<p class="welcome">MOST WELCOME</p>
+
+<div class="panel">
+<h2>MOHAMMAD WALEED JAVEED (SADR)</h2>
+<h2><i>MEMBERS NAME</i></h2>
+<div class="names">
+SHAHZAD<br>
+TALHA DOGAR<br>
+TALHA ASIF<br>
+REHMAN ALI<br>
+ALI AHMAD<br>
+BILAWAL AFRIDI<br>
+MUSA ONLY<br>
+ANAS
+</div>
+</div>
+
+<div class="panel">
+<h2>BEST BROS RULES</h2>
+<ol class="rules">
+<li>Always respect every member.</li>
+<li>Never break the trust of your brothers.</li>
+<li>Stay loyal in every situation.</li>
+<li>Help each other when needed.</li>
+<li>Never spread personal matters.</li>
+<li>Keep the group united.</li>
+<li>Respect everyone's opinion.</li>
+<li>Never insult a brother.</li>
+<li>Be honest with each other.</li>
+<li>SHAHZAD leads fairly and responsibly.</li>
+<li>Never create unnecessary fights.</li>
+<li>Support each other's goals.</li>
+<li>Keep promises.</li>
+<li>Forgive small mistakes.</li>
+<li>Friendship comes with respect and loyalty.</li>
+</ol>
+</div>
+
+<div class="panel">
+<h2>ENTER SECRET CODE</h2>
+<input type="password" id="code" placeholder="Enter code">
+<br>
+<button onclick="unlock()">ENTER</button>
+<p id="error" style="color:red"></p>
+</div>
+
+</div>
+
+<div class="container" id="secret">
+<h1>THE FUTURE VISION <span class="gold">911</span></h1>
+<div class="panel">
+<h2>BEST BROS SHAYARI</h2>
+<p style="font-size:20px;line-height:1.8;color:white">
+Dosti sirf naam nahi, ek ehsaas hoti hai,<br>
+Sache doston ke saath har khushi khaas hoti hai.<br>
+Waqt badalta hai, log badalte hain,<br>
+Magar asli dosti hamesha dil ke paas hoti hai.
+</p>
+</div>
+
+<div class="panel">
+<h2 class="fake">FAKES BROS</h2>
+<div class="names">
+NAKEEB<br>
+AYYAN BUKHARI<br>
+QASSAM
+</div>
+</div>
+
+<div class="panel">
+<h2>SHUBH'S MOVES</h2>
+<p>Background Music</p>
+<iframe
+ src="https://www.youtube.com/embed/raaqmralEZw?autoplay=1&loop=1&playlist=raaqmralEZw"
+ title="Shubh Moves"
+ allow="autoplay; encrypted-media; picture-in-picture"
+ allowfullscreen>
+</iframe>
+<p style="color:#ddd">If music does not start, press Play.</p>
+</div>
+
+<button onclick="goBack()">BACK</button>
+</div>
+
+<footer>THE FUTURE VISION 911 • BROTHERHOOD FOREVER</footer>
+
+<script>
+function unlock(){
+ const entered=document.getElementById("code").value;
+ if(entered==="911"){
+  document.getElementById("main").style.display="none";
+  document.getElementById("secret").style.display="block";
+  document.getElementById("error").innerText="";
+ }else{
+  document.getElementById("error").innerText="WRONG CODE! TRY AGAIN.";
+ }
+}
+function goBack(){
+ document.getElementById("secret").style.display="none";
+ document.getElementById("main").style.display="block";
+ document.getElementById("code").value="";
+}
+</script>
+</body>
+</html>
